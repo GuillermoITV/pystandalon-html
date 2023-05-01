@@ -39,7 +39,7 @@ setup(
     long_description=README + "\n\n" + HISTORY,
     include_package_data=True,
     keywords="html to single html",
-    name="prueba",
+    name="python_training_devops",
     packages=find_packages(include=["pystandalonehtml"]),
     setup_requires=SETUP_REQUIREMENTS,
     test_suite="tests",
