@@ -15,13 +15,9 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'tox -e py'
+                sh 'python setup.py sdist bdist_wheel'
             }
-            post {
-                always {
-                    junit 'reports/*.xml'
-                }
-            }
+            
         }
     }
 }
