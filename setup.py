@@ -48,3 +48,4 @@ setup(
     version="0.1.30",
     zip_safe=False,
 )
+
