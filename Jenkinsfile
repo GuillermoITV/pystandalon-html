@@ -22,6 +22,11 @@ pipeline {
             steps {
                 sh 'python3 setup.py sdist bdist_wheel'
             }   
-        }        
+        } 
+        stage('upload') {
+            steps {
+                sh 'twine upload -r testpypi dist/* --verbose --config-file .pypirc'
+            }   
+        }          
     }
 }
