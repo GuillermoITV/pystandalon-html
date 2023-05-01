@@ -39,8 +39,9 @@ setup(
     long_description=README + "\n\n" + HISTORY,
     include_package_data=True,
     keywords="html to single html",
-    name="pystandalonehtml23",
-    packages=find_packages(include=["pystandalonehtml23"]),
+    name="python_testing
+    ",
+    packages=find_packages(include=["pystandalonehtml"]),
     setup_requires=SETUP_REQUIREMENTS,
     test_suite="tests",
     tests_require=TEST_REQUIREMENTS,
