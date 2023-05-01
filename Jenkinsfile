@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'pytest'
+                sh 'tox -e py'
             }
             post {
                 always {
