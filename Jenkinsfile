@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'python setup.py sdist bdist_wheel'
+                sh 'python3 setup.py sdist bdist_wheel'
             }
             
         }
