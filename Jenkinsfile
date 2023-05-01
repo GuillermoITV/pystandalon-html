@@ -15,9 +15,13 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'python3 setup.py sdist bdist_wheel'
-            }
-            
+                sh 'tox -e py'
+            }   
         }
+        stage('deploy') {
+            steps {
+                sh 'python3 setup.py sdist bdist_wheel'
+            }   
+        }        
     }
 }
