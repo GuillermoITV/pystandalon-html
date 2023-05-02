@@ -45,7 +45,7 @@ setup(
     test_suite="tests",
     tests_require=TEST_REQUIREMENTS,
     url="https://github.com/victorcabello/pystandalonehtml",
-    version="0.1.31",
+    version="0.1.32",
     zip_safe=False,
 )
 
